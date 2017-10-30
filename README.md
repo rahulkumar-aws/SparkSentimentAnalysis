@@ -1,4 +1,4 @@
-##Spark Sentiment Analysis##
+###Spark Sentiment Analysis
 
 This code base will demonstrate how to build basic sentiment analysis system with Apache Spark.
 
