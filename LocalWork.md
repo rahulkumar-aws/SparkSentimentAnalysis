@@ -1,6 +1,0 @@
-twitter {
-  consumerKey="fake_dvFv1SvOSEOUDrxXX0f5s2W1Rahul"
-  consumerSecret="fake_A0KyysgbfcDy5lVIzHc2YhjVt4CaIYo0OREN6GBwWYA3wKpGzDog"
-  accessToken="fake_2246693798-t7GTy9dedjhrpQftZj1hHHwU6AVZWezH6NyUI6Dull"
-  accessTokenSecret="fake_vFf8bZS2pn49AbBorL6FSIXlD9phaIcSinyARuyL4INUQueen"
-}

@@ -1,3 +1,4 @@
 target
 .idea
 /LocalWork.md
+/src/main/resources/twitter.conf
