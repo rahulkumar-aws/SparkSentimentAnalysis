@@ -14,6 +14,7 @@ object Main {
       .master(master)
       .getOrCreate()
     val sc = spark.sparkContext
+    sc.setLogLevel("ERROR")
 
     val filepath = getClass.getResource("/data/small.txt").getPath
     val datafile = sc.textFile(filepath)

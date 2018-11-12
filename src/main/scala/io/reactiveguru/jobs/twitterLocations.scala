@@ -39,6 +39,8 @@ object twitterLocations {
     }
 
     val ssc = new StreamingContext(sparkConf, Seconds(2))
+    val sc = ssc.sparkContext
+    sc.setLogLevel("ERROR")
     val locationsQuery = new FilterQuery().locations(boundingBoxes : _*)
 
     // Print Tweets from the specified coordinates

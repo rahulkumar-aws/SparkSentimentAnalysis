@@ -43,8 +43,9 @@ object TwitterAlgebirdCMS {
     if (!sparkConf.contains("spark.master")) {
       sparkConf.setMaster("local[2]")
     }
-
     val ssc = new StreamingContext(sparkConf, Seconds(10))
+    val sc = ssc.sparkContext
+    sc.setLogLevel("ERROR")
     val stream = TwitterUtils.createStream(ssc, None, filters, StorageLevel.MEMORY_ONLY_SER_2)
 
     val users = stream.map(status => status.getUser.getId)

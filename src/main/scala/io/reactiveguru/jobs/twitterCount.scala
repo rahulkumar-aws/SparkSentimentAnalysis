@@ -32,6 +32,8 @@ object twitterCount {
     }
 
     val ssc = new StreamingContext(sparkConf, Seconds(2))
+    val sc = ssc.sparkContext
+    sc.setLogLevel("ERROR")
     val stream = TwitterUtils.createStream(ssc, None, filters)
 
 

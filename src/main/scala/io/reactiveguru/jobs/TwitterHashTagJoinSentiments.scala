@@ -35,6 +35,8 @@ object TwitterHashTagJoinSentiments {
     }
 
     val ssc = new StreamingContext(sparkConf, Seconds(2))
+    val sc = ssc.sparkContext
+    sc.setLogLevel("ERROR")
     val stream = TwitterUtils.createStream(ssc, None, filters)
 
     val hashTags = stream.flatMap(status => status.getText.split(" ").filter(_.startsWith("#")))
