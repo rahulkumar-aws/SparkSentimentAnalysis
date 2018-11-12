@@ -1,4 +1,5 @@
 target
 .idea
 /LocalWork.md
-/src/main/resources/twitter.conf
+src/main/resources/twitter.conf
+.DS_Store
